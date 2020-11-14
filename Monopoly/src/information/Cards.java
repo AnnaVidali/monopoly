@@ -11,4 +11,7 @@ package information;
  */
 public class Cards {
     private String name;
+    private int id;
+    private String description;
+    
 }
