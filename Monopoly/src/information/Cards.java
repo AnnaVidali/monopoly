@@ -10,5 +10,5 @@ package information;
  * @author anna
  */
 public class Cards {
-    
+    private String name;
 }
