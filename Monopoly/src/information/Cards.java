@@ -5,13 +5,14 @@
  */
 package information;
 
+import java.util.Hashtable;
+
 /**
  *
  * @author anna
  */
 public class Cards {
     private String name;
-    private int id;
-    private String description;
+    private Hashtable<Integer,String> idDescription = new Hashtable<Integer,String>();
     
 }
