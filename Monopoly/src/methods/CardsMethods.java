@@ -10,5 +10,5 @@ package methods;
  * @author anna
  */
 public class CardsMethods {
-    //naiiiiiiiiii re
+    
 }
