@@ -10,8 +10,8 @@ public class Player {
     private boolean construct;
     private int potision;
     
+    //constructor for player
     public Player(String name, int money, boolean round, String property, boolean construct, int potision) {
-	//super();
 	this.name = name;
 	this.money = money;
 	this.round = round;
@@ -20,6 +20,7 @@ public class Player {
 	this.potision = potision;
     }
 	
+    //getters and setters
     public String getName() {
 	return name;
     }
