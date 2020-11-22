@@ -5,8 +5,6 @@
  */
 package information;
 
-import java.util.Hashtable;
-
 /**
  *
  * @author anna
