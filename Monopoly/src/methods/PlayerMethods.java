@@ -6,6 +6,7 @@
 
 package methods;
 import information.*;
+import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -24,12 +25,13 @@ public class PlayerMethods {
     
     
    void BuyProperty(Player player, Cards card){
-       int price= card.getPrice();
+       int potision = player.getPotision();
+       int price = card.getPrice();
        int total= player.getMoney();
-       if (price<=total){
        player.money=player.money - price;
-       //card.getPosition()
-       }
+       card.setOwner(player.getName());
+       
+       
    }
     
     

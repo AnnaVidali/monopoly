@@ -5,10 +5,17 @@
  */
 package methods;
 
+import information.Cards;
+import java.util.ArrayList;
+
 /**
  *
  * @author anna
  */
 public class CardsMethods {
-    
+    ArrayList<Cards> CardInit(){
+        
+        return null;
+        
+    }
 }
