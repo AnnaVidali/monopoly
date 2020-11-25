@@ -7,6 +7,7 @@
 package methods;
 import information.*;
 import java.util.Random;
+
 /**
  *
  * @author anna
@@ -22,7 +23,14 @@ public class PlayerMethods {
 }  
     
     
-    
+   void BuyProperty(Player player, Cards card){
+       int price= card.getPrice();
+       int total= player.getMoney();
+       if (price<=total){
+       player.money=player.money - price;
+       //card.getPosition()
+       }
+   }
     
     
     

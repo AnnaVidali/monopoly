@@ -3,7 +3,7 @@ package information;
 
 public class Player {
     private String name;
-    private int money;
+    public int money;
     private boolean round;
     private String property;
     private boolean construct;
