@@ -2,7 +2,7 @@ package information;
 
 
 public class Player {
-    private String name;
+    public String name;
     public int money;
     private boolean round;
     private String property;
@@ -18,7 +18,9 @@ public class Player {
 	this.construct = construct;
 	this.potision = potision;
     }
-	
+	public Player(){
+            
+        }
     //getters and setters
     public String getName() {
 	return name;
