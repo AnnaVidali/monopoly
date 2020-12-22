@@ -41,7 +41,7 @@ public class PlayerMethods {
         player.setMoney(player.getMoney()+ money);
     }
     
-    public static void decreaseMoney(Player player, int money){
+    public static void takeMoney(Player player, int money){
          if (money<=player.getMoney()){
         player.setMoney(player.getMoney()- money);
          }
@@ -49,14 +49,13 @@ public class PlayerMethods {
     
     public static void givePlayer1MoneyFromPlayer2(Player player1, Player player2, int money){
         if (money<=player2.getMoney()){
-        player1.setMoney(player1.getMoney() + money);
-        player2.setMoney(player2.getMoney() - money);
-        //change
+        giveMoney(player1, money);
+        takeMoney(player2, money);
         }
     }
     
     public static void giveMoneyForStartRound (Player player, int dices){
-        int position = player.getPotision();
+        int position = player.getPosition();
         int newposition = position + dices;
         if (newposition>39){
             player.setMoney(player.getMoney() + 2000);
@@ -66,7 +65,7 @@ public class PlayerMethods {
     
     boolean checkNewRoundPosition(Player player, int dices){
         boolean flag=false;
-        int position = player.getPotision();
+        int position = player.getPosition();
         int newposition = position + dices;
         if (newposition>39){
         flag=true;
@@ -80,16 +79,16 @@ public class PlayerMethods {
         int finalposition=0;
         if (flag==true){
           // int finalposition=0;
-            player.setPotision(dices);
-            int position = player.getPotision();
+            player.setPosition(dices);
+            int position = player.getPosition();
             int newposition = position + dices;
             finalposition=newposition-39;
         }else{
-             int position = player.getPotision();
+             int position = player.getPosition();
         int newposition = position + dices;
             finalposition=newposition;
         }
-        player.setPotision(finalposition);
+        player.setPosition(finalposition);
       return 1;
         //change
     }

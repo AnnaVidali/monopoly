@@ -7,7 +7,7 @@ public class Player {
     private boolean round;
     private String property;
     private boolean construct;
-    private int potision;
+    private int position;
     
     //constructor for player
     public Player(String name, int money, boolean round, String property, boolean construct, int potision) {
@@ -16,7 +16,7 @@ public class Player {
 	this.round = round;
 	this.property = property;
 	this.construct = construct;
-	this.potision = potision;
+	this.position = position;
     }
 	public Player(){
             
@@ -62,11 +62,11 @@ public class Player {
     	this.construct = construct;
     }
     
-    public int getPotision() {
-    	return potision;
+    public int getPosition() {
+    	return position;
     }
     
-    public void setPotision(int potision) {
-    	this.potision = potision;
+    public void setPosition(int potision) {
+    	this.position = position;
     }
 }
