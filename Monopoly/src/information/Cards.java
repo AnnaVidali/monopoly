@@ -17,11 +17,16 @@ public class Cards {
     private String owner;
     private int houses;
     private String colour;
-    private int position; //same as id of special cards
+    private int mortgage;
+    private int houseCost;
+    private int id; 
     private String description;
+    private int position; //board position
+    private int position2; //board position for special cards
+    private int position3; //board position for special cards
     
     //constructor for properties
-    public Cards(String type, String name, int price, int rent, String owner, int houses, String colour, int position) {
+    public Cards(String type, String name, int price, int rent, String owner, int houses, String colour, int mortgage, int houseCost, int position, int id) {
         this.type = type;
         this.name = name;
         this.price = price;
@@ -29,14 +34,24 @@ public class Cards {
         this.owner = owner;
         this.houses = houses;
         this.colour = colour;
+        this.mortgage = mortgage;
+        this.houseCost = houseCost;
         this.position = position;
+        this.id = id;
     }
     
     //constructor for special cards (decision, order)
-    public Cards(String type, int position, String description) {
+    public Cards(String type, int position, int position2, int position3, String description, int id) {
         this.type = type;
         this.position = position;
+        this.position2 = position2;
+        this.position3 = position3;
         this.description = description;
+        this.id = id;
+    }
+
+    //empty constructor
+    public Cards() {
     }
 
     //getters and setters for attributes
@@ -96,6 +111,22 @@ public class Cards {
         this.colour = colour;
     }
 
+    public int getMortgage() {
+        return mortgage;
+    }
+
+    public void setMortgage(int mortgage) {
+        this.mortgage = mortgage;
+    }
+
+    public int getHouseCost() {
+        return houseCost;
+    }
+
+    public void setHouseCost(int houseCost) {
+        this.houseCost = houseCost;
+    }
+    
     public int getPosition() {
         return position;
     }
@@ -110,5 +141,29 @@ public class Cards {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getPosition2() {
+        return position2;
+    }
+
+    public void setPosition2(int position2) {
+        this.position2 = position2;
+    }
+
+    public int getPosition3() {
+        return position3;
+    }
+
+    public void setPosition3(int position3) {
+        this.position3 = position3;
     }
 }
